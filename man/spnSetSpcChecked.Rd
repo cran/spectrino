@@ -1,5 +1,5 @@
 \name{spnSetSpcChecked}
-\title{Set checked state of spec(s)}
+\title{Set checked state of spec(s) in the top tab/spec-tree}
 \usage{
 spnSetSpcChecked(Grp,Spc,Checked)
 }
@@ -10,7 +10,7 @@ spnSetSpcChecked(Grp,Spc,Checked)
 \item{Checked}{ - logical, the state which will be set}
 }
 \description{
-Set Spc spectrum of Grp spec-group checkbox to checked/unchecked state. 
+Set Spc spectrum of Grp spec-group checkbox(es) to checked/unchecked state. 
 If Spc="*" then all of specs in Grp group are set. If Grp="*" then all of spectra in all groups are set to Checked (in that case Spc is ignored).
 }
 \value{
@@ -37,6 +37,6 @@ spnSetSpcChecked(2,"*",FALSE)
 spnSetSpcChecked("*","*",TRUE)
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

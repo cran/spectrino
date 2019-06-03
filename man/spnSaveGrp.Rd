@@ -1,11 +1,11 @@
 \name{spnSaveGrp}
-\title{Save aspec- group}
+\title{Save a spec-group in the top tab/spec-tree}
 \usage{
 spnSaveGrp(Grp,GFilename)
 }
 \alias{spnSaveGrp}
 \arguments{
-\item{Grp}{ - the name(character string) or the index(integer) of the group; 0 - active group; "*" - all groups. If Grp="*" then all groups are saved under their proper names (in that case GFilename is ignored, but some string be present) and nothing gets back to R.}
+\item{Grp}{ - the name(character string) or the index(integer) of the group; 0 - active group; "*" - all groups. If Grp="*" then all groups are saved under their proper names (in that case GFilename is ignored, but some empty string  has to be provided) and nothing gets back to R.}
 \item{GFilename}{ - character string. The path of GFilename of is ignored, because any group file must be in the same directory as the specs in it. If GFilename is empty (the most common use), then Spectrino uses the proper name of the group.}
 }
 \description{
@@ -35,6 +35,6 @@ s2 <- spnSaveGrp("Test2","gassew")
 spnSaveGrp("*","")
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

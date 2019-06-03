@@ -1,14 +1,14 @@
 \name{spnDelGrp}
-\title{Delete a group(s)}
+\title{Delete a group(s) in the top tab/spec-tree}
 \usage{
 spnDelGrp(Grp)
 }
 \alias{spnDelGrp}
 \arguments{
-\item{Grp}{ - the name(character string) or the index(integer) of the group; 0 - active group; "*" - all groups.}
+\item{Grp}{ - the name(character string) or the index(integer) of the group; 0 - active group; "*" or "<ALL>" - all groups.}
 }
 \description{
-  Delete Grp group. If Grp="*" then delete all of the groups from the spec-tree.
+  Delete Grp group in the top tab/spec-tree. If Grp="*" or "<ALL>" then delete all of the groups from the spec-tree.
 }
 \value{
   \code{spnDelGrp} returns the number of groups after the deleting. \code{(spnGetGrpCount)}
@@ -31,6 +31,6 @@ spnDelGrp(3)
 spnDelGrp("*") 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

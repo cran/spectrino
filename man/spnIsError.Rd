@@ -5,28 +5,30 @@ spnIsError(rslt)
 }
 \alias{spnIsError}
 \arguments{
-\item{rslt}{ check if rslt is character and if it is, if it is an error message (first char is E}
+\item{rslt}{ check if rslt is character and if it is, if it is an error message (starts with Error:)}
 }
 \description{
-  Check if the result of spectrino function is error. It's a good practice to check 
-the result from any spectrino function (except for spnNew, spnFree and spnCheck).
+  Checking if the result of spectrino function is error. In your code, it's a good practice to check 
+the result from any spectrino function (except for spnNew, spnFree and spnCheck). 
+From command line there is no sense to call this function because you would see the error message on the terminal.
 }
 \value{
   \code{spnIsError} returns logical for spectrino error. 
 }
 \author{Teodor Krastev}
 \examples{
+spnNew() 
 
-# some data
-mx <- c(10.4, 5.6, 3.1, 6.4, 21.7)
+# generate test set
+spnOpenTree("<test>")
+
+# all the specs from all the groups (excluding "unknowns" group, if any)
+m1 <- spnGetTree(FALSE) 
 
 # is there an error 
-spnIsError(mx)
+spnIsError(m1)
 
-er <- "Error: test mistake"
-
-# is there an error 
-spnIsError(er)
-
+# Release of Spectrino
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

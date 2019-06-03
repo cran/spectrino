@@ -1,5 +1,5 @@
 \name{spnOpenSpc}
-\title{Open spec in spec-group}
+\title{Open spec in spec-group in the top tab/spec-tree}
 \usage{
 spnOpenSpc(Grp,SFilename)
 }
@@ -33,6 +33,6 @@ spnDelSpc(2,"*")
 i1 <- spnOpenSpc("Test2","test23.txt") 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface} 

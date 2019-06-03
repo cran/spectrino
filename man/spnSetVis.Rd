@@ -1,5 +1,5 @@
 \name{spnSetVis}
-\title{Set Spectrino to be visible or hidden}
+\title{Set Spectrino application to be visible or hidden}
 \usage{
 spnSetVis(Visible)
 }
@@ -8,7 +8,7 @@ spnSetVis(Visible)
 \item{Visible}{ - logical; set a visibility state}
 }
 \description{
-  Set Spectrino to be visible or hidden, if Visible = TRUE shows Spectrino else hides Spectrino. Gets back the current visibility. If you want to use Spectrino only as a data-tank, that is the way to hide it.
+  Set Spectrino application to be visible or hidden, if Visible = TRUE shows Spectrino else hides Spectrino. Gets back the current visibility. If you want to use Spectrino application only as a data-storage, that is the way to hide it.
 }
 \value{
   \code{spnSetVis} Gets back the current visibility.
@@ -25,6 +25,6 @@ b1 <- spnSetVis(TRUE)
 b1 <- spnSetVis(FALSE) 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

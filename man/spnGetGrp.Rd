@@ -1,15 +1,15 @@
 \name{spnGetGrp}
-\title{Get a group data}
+\title{Get a group data in the top tab/spec-tree}
 \usage{
 spnGetGrp(OnlyChecked,Grp)
 }
 \alias{spnGetGrp}
 \arguments{
 \item{OnlyChecked}{ - logical; if true gets only the checked specs.}
-\item{Grp}{ - the name(character string) or the index(integer) of the group; 0 - active group.}
+\item{Grp}{ - the name(character string) or the index(integer) of a group in the top tab/spec-tree; 0 - active group.}
 }
 \description{
-  Get spectra from one spec-group (matrix). All the spectra in a group  are assumed to have common X set of values, so if there is loaded spectrum in different X values, the spectrum is recalculated to fit that reference set. 
+  Get spectra from one spec-group (matrix) in the top tab/spec-tree. All the spectra in a group  are assumed to have common X set of values, so if there is loaded spectrum in different X values, the spectrum is recalculated to fit that reference set. 
 }
 \value{
   \code{spnGetGrp} returns a preprocessed group data in matrix. Spectra are always in rows (one spectrum is one row). The variables are columns, one variable (e.g. mass) is one column. 
@@ -32,6 +32,6 @@ m1 <- spnGetGrp(TRUE,1)
 m2 <- spnGetGrp(FALSE,"Test2") 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

@@ -1,5 +1,5 @@
 \name{spnOpenGrp}
-\title{Opens/Creates a spec-group}
+\title{Opens/Creates a spec-group in the top tab/spec-tree}
 \usage{
 spnOpenGrp(GFilename,NewGrp)
 }
@@ -10,8 +10,7 @@ All the filenames or directories must be with forward slashes e.g. D:/Prime/Data
 \item{NewGrp}{ - logical. If NewGrp is true then GFilename shouldn't exist to be created. If NewGrp is false then GFilename must exist to be opened.}
 }
 \description{
-  Open/Create a spec-group. All the spec files from one spec-group must be in the direcory of the group file.
-The names of spec-groups or specs are the filenames of the respected ones without path and extension (no space or special characters allowed). To avoid misinterpretation the names of group or spec cannot be numbers (even the operation system let you do it).
+  Open/Create a spec-group in the top tab/spec-tree. All the spec files from one spec-group must be in the direcory of the group file. The names of spec-groups or specs are the filenames of the respected ones without path and extension (no space or special characters allowed). To avoid misinterpretation the names of group or spec cannot be numbers (even the operation system let you do it).
 }
 \value{
   \code{spnOpenGrp} returns the number of groups after the adding, which is the index of added group. \code{spnGetGrpCount}
@@ -39,6 +38,6 @@ spnDelGrp("*")
 i2 <- spnOpenGrp("Test2", FALSE) 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

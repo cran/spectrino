@@ -1,14 +1,14 @@
 \name{spnGetGrpName}
-\title{Get the group name by index}
+\title{Get the group name by index in the top tab/spec-tree}
 \usage{
 spnGetGrpName(GrpIdx)
 }
 \alias{spnGetGrpName}
 \arguments{
-\item{GrpIdx}{ - the index(integer) of the spec-group. Use GrpIdx=0 for active group. If GrpIdx="*" gets back a comma-separated list of all groups names.} 
+\item{GrpIdx}{ - the index(integer) of the spec-group in the top tab/spec-tree. Use GrpIdx=0 for active group. If GrpIdx="*" or "<ALL>" gets back a comma-separated list of all groups names.} 
 }
 \description{
-  Get the group name with an index GrpIdx
+  Get the group name with an index GrpIdx in the top tab/spec-tree
 }
 \value{
   \code{spnGetSpcCount} returns name(character string) of spec-group with GrpIdx index.
@@ -31,6 +31,6 @@ s1 <- spnGetGrpName(2)
 s2 <- spnGetGrpName(0)
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

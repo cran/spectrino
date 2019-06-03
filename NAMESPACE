@@ -1,3 +1,4 @@
 exportPattern("^[[:alpha:]]+")
-import(utils, httpuv)
+import(httpuv)
 importFrom(jsonlite, fromJSON)
+importFrom(utils, download.file, unzip)

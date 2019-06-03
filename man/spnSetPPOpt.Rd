@@ -1,11 +1,11 @@
 \name{spnSetPPOpt}
-\title{Set pre-processing options of Spectrino}
+\title{Set pre-processing options of Spectrino top spec-tree}
 \usage{
 spnSetPPOpt(OptionList)
 }
 \alias{spnSetPPOpt}
 \arguments{
-\item{OptionList}{ - string; comma separated list of options as they are in Preprocess section of a spec-tree. 
+\item{OptionList}{ - string; semicolumn separated list of options as they are in Preprocess section of the top spec-tree. 
 }
 }
 \description{Set Spectrino pre-processing options as string of semicolumn delimited list
@@ -32,6 +32,6 @@ spnNew()
 spnSetPPOpt("Normalize=0;MeanExtract=0") 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

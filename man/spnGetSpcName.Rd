@@ -1,5 +1,5 @@
 \name{spnGetSpcName}
-\title{Get the group name by index}
+\title{Gets the spec name with an index SpcIdx from Grp group}
 \usage{
 spnGetSpcName(Grp,SpcIdx)
 }
@@ -9,7 +9,7 @@ spnGetSpcName(Grp,SpcIdx)
 \item{SpcIdx}{ - the index(integer) of the spec; 0 - selected spec. If SpcIdx="*" gets back a comma-separated list of all specs names in the group.} 
 }
 \description{
-  Gets the spec name with an index SpcIdx from Grp group
+  Gets the spec name with an index SpcIdx from Grp group in the top tab/spec-tree
 }
 \value{
   \code{spnGetSpcCount} returns the name(character string) of spec with SpcIdx index from Grp group.
@@ -35,6 +35,6 @@ s2 <- spnGetSpcName(0,"*")
 s3 <- spnGetSpcName("Test2",3)
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

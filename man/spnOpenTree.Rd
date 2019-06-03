@@ -1,5 +1,5 @@
 \name{spnOpenTree}
-\title{Open a spec-tree}
+\title{Open a spec-tree in the top tab/spec-tree}
 \usage{
 spnOpenTree(TFilename,InclOpt)
 }
@@ -10,8 +10,8 @@ spnOpenTree(TFilename,InclOpt)
 If InclOpt = 0 then factory setting (no preprocessing) is used; 1 is for last used one; if 2 - the options are taken from TFilename}
 }
 \description{
-Open a spec-tree from TFilename. The spec-tree file (.str) always is saved with the preprocessing options. The function returns 
-To create new spec-tree you have to empty current one by \code{spnDelGrp("*")} and save the empty one under new name.}
+Open a spec-tree in the active tab from TFilename. The spec-tree file (.str) always is saved with the preprocessing options. If there is no active tab opened Spectrino will create one for you (as in spnAddTree()). 
+To create new spec-tree you have to either open spec-tree with non-existant filename or empty current one by \code{spnDelGrp("*")} and save the empty one under new name.}
 \value{
   \code{spnOpenTree} returns the number of groups in the new spec-tree. \code{spnGetGrpCount}
 }
@@ -27,6 +27,6 @@ spnNew()
 spnOpenTree("<test>")
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

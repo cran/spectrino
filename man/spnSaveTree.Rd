@@ -1,5 +1,5 @@
 \name{spnSaveTree}
-\title{Save current spec-tree with the preprocessing options.}
+\title{Save the top (active) spec-tree with the preprocessing options.}
 \usage{
 spnSaveTree(TFilename)
 }
@@ -31,6 +31,6 @@ spnSaveTree("")
 spnSaveTree("savenow")
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

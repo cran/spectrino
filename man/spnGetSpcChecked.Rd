@@ -1,5 +1,5 @@
 \name{spnGetSpcChecked}
-\title{Gets the vector of the state of spec checking boxes of a group}
+\title{Gets the vector of the state of spec checking boxes of Grp group in the top tab/spec-tree}
 \usage{
 spnGetSpcChecked(Grp)
 }
@@ -28,6 +28,6 @@ spnOpenTree("<test>")
 bv1 <- spnGetSpcChecked(1) 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

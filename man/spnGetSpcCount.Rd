@@ -1,5 +1,5 @@
 \name{spnGetSpcCount}
-\title{Number of spectra in Grp spec-group}
+\title{Number of spectra in Grp spec-group in the top tab/spec-tree}
 \usage{
 spnGetSpcCount(OnlyChecked,Grp)
 }
@@ -9,10 +9,10 @@ spnGetSpcCount(OnlyChecked,Grp)
 \item{Grp}{ - the name(character string) or the index(integer) of the spec-group; 0 - active group.}
 }
 \description{
-  Counts the number of specs in Grp group.
+  Counts the number of specs in Grp group in the top tab/spec-tree.
 }
 \value{
-  \code{spnGetSpcCount} returns number of specs in Grp group.
+  \code{spnGetSpcCount} returns number of specs in Grp group in the top tab/spec-tree.
 }
 \author{Teodor Krastev}
 \seealso{
@@ -35,6 +35,6 @@ i2 <- spnGetSpcCount(FALSE,0)
 i3 <- spnGetSpcCount(FALSE,"Test3")
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

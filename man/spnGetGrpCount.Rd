@@ -1,14 +1,14 @@
 \name{spnGetGrpCount}
-\title{Number of groups loaded}
+\title{Number of groups loaded in the top tab/spec-tree}
 \usage{
 spnGetGrpCount()
 }
 \alias{spnGetGrpCount}
 \description{
-  Counts the number of spec-groups loaded in the current spec-tree.
+  Counts the number of spec-groups loaded in the top spec-tree.
 }
 \value{
-  \code{spnGetGrpCount} returns number of spec-groups loaded. 
+  \code{spnGetGrpCount} returns number of spec-groups loaded in the top tab/spec-tree. 
 }
 \author{Teodor Krastev}
 \seealso{
@@ -24,6 +24,6 @@ spnOpenTree("<test>")
 n <- spnGetGrpCount()
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}

@@ -1,5 +1,5 @@
 \name{spnGetTree}
-\title{Gets specs from all the groups}
+\title{Gets specs from all the groups of the top tab/spec-tree}
 \usage{
 spnGetTree(OnlyChecked)
 }
@@ -8,7 +8,7 @@ spnGetTree(OnlyChecked)
 \item{OnlyChecked}{ - logical; if true gets only the checked specs}
 }
 \description{
-  Get spectra from all the groups. Only the checked ones or all of them. Variables are by columns; measurements are by rows. The reason is "prcomp" principal component analysis accepts that order of data. 
+  Get spectra from all the groups of the top tab/spec-tree. Only the checked ones or all of them. Variables are by columns; measurements are by rows. The reason is "prcomp" principal component analysis accepts that order of data. 
 Excluding the spectra from a group called "unknowns". That protected name is supposed to be for testing purposes only, so the data from that group are not included in all-data-get command.
 }
 \value{
@@ -29,6 +29,6 @@ spnOpenTree("<test>")
 m1 <- spnGetTree(FALSE) 
 
 # Release of Spectrino
-spnFree(TRUE)
+#spnFree(TRUE)
 }
 \keyword{programming}\keyword{interface}
